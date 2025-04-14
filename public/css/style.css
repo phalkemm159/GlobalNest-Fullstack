@@ -1,0 +1,351 @@
+ /* Import Google Fonts */
+ @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+ /* General Styling */
+ body {
+    margin: 0;
+    background: #222;
+    font-family: 'Plus Jakarta Sams', sans-serif !important;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+ }
+
+ .container {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ /* Navbar Styling */
+ .navbar {
+    height: 5rem;
+    background-color: white;
+ }
+
+ .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #444;
+    text-transform: uppercase;
+ }
+
+ .navbar-brand:hover {
+    color: #000;
+ }
+
+ .fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-left: 15%;
+ }
+
+ .nav-unique {
+    margin-left: 65%;
+ }
+
+ .nav-link {
+    color: #1e1d1d;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 20px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+ }
+
+ .nav-link:hover {
+    color: #000000 !important;
+
+ }
+
+ /* Navbar Underline Effect */
+ .nav-link::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+ }
+
+ .nav-link:hover::before {
+    width: 100%;
+ }
+
+ /* Responsive Navbar */
+ /* @media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 10px 0;
+    }
+} */
+
+ /* Responsive Navbar */
+ @media (max-width: 907px) {
+    .navbar-nav {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       align-items: center;
+       padding: 10px 0;
+    }
+
+    .nav-link {
+       margin: 5px 0;
+       width: 100%;
+       text-align: center;
+       padding: 10px;
+    }
+
+    .navbar-collapse {
+       background-color: white;
+       padding: 10px 0;
+    }
+
+    #map {
+      height: 150px;
+      width: auto;
+    }
+ }
+
+ @media (mix-width: 908px) {
+    .navbar-brand {
+       font-size: 1.2rem;
+    }
+
+    .fa-compass {
+       font-size: 1.5rem;
+       margin-right: 5px;
+    }
+
+    #map {
+      height: 150px;
+      width: auto;
+    }
+ }
+
+ body {
+    font-family: 'Plus Jakarta Sams', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+ }
+
+ .container {
+    flex: 1;
+ }
+
+ .plus-jakarta-sans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100, 400, 300;
+    font-style: normal;
+ }
+
+ /* NavBar*/
+ .navbar {
+    height: 5rem;
+    background-color: white;
+ }
+
+ .fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+ }
+
+ .nav-link {
+    color: #222222;
+    /* Default color */
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition effect */
+ }
+
+ .nav-link:hover {
+    cursor: pointer;
+    color: #000000 !important;
+    /* Change to a darker color */
+    /* Optional: Makes text bolder on hover */
+ }
+
+ .navbar-navs {
+    margin-left: 3%;
+ }
+
+ /* .navbar-collapse{
+   background-color: #fff;
+} */
+
+ /* Align left and right navbar links properly */
+ /* .navbar-left,
+.navbar-right {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+} */
+ /* 
+.navbar-left .nav-link {
+    margin-left: 1rem;
+} */
+
+ /* .navbar-right .nav-link {
+    margin-left: 1rem;
+} */
+
+ /* .navbar-collapse {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+} */
+
+ /* Footer*/
+ .f-info-links a {
+    text-decoration: none;
+    color: #222222;
+ }
+
+ .f-info-links a:hover {
+    text-decoration: underline;
+ }
+
+ .f-info-links,
+ .f-info-socials,
+ .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .f-info-socials i {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+ }
+
+ .f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+ }
+
+ .ft-link {
+    color: #222222;
+ }
+
+ /* cards */
+ .listing-card,
+ .card-img-top {
+    border: none !important;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    height: 60vh;
+ }
+
+ .card-img-top {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+ }
+
+
+ .card-body {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+ }
+
+ .card-body {
+    padding: 0 !important;
+ }
+
+ .card-text p {
+    font-weight: 400 !important;
+ }
+
+ .linking-link {
+    text-decoration: none !important;
+    color: inherit;
+    /* Keeps text color unchanged */
+    display: block;
+    /* Ensures the link covers the whole card */
+ }
+
+
+ /* .card-text {
+   text-decoration: none !important;
+   text-decoration: underline;
+}
+
+.card-text a {
+   text-decoration: none !important;
+   color: inherit; /* Ensures the text color remains consistent */
+
+ .card-text a:hover {
+    /* text-decoration: none !important; */
+    cursor: pointer;
+    text-decoration: underline;
+ }
+
+ /* Card Effect */
+ .card-img-overlay {
+    opacity: 0;
+ }
+
+ .card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+ }
+
+ /* New Page */
+
+ .add-btn,
+ .btn {
+    background-color: #fe424d !important;
+    border: none !important;
+ }
+
+ /* Edit Page */
+ .edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+ }
+
+ .orgImgUrl {
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+ }
+
+
+ /* Show Page */
+ .btns {
+    display: flex;
+ }
+
+.box {
+   width: 100%;
+}
+
+ /* .show-img{
+   width: 100%;
+   height: 50%;
+ } */
+
+ /* Map styling */
+ #map {
+   height: 400px;
+   width: auto;
+ }

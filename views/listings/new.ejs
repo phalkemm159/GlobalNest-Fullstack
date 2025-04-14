@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+</head> -->
+
+<% layout("/layouts/boilerplate") %>
+    <div class="row mt-4 ">
+        <div class="col-8 offset-2">
+            <!-- <%- include("../includes/navbar.ejs") %> -->
+
+
+            <h3>Create New Listings</h3>
+
+
+            <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+
+                <div class="mt-4 mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="listing[title]" placeholder="Enter a catchy title" class="form-control"
+                        required />
+                    <div class="valid-feedback">Title Looks Greate.</div>
+                    <div class="invalid-feedback">Please enter a title</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" class="form-control" required></textarea>
+                    <div class="valid-feedback">Perfect Description.</div>
+                    <div class="invalid-feedback">Please enter short description</div>
+                </div>
+
+                <!-- <div class="mb-3">
+                    <label for="image" class="form-label">Image Link</label>
+                    <input type="text" name="listing[image][url]" placeholder="Enter image URL/Link"
+                        class="form-control" >
+                    //<input type="text" name="listing[image][filename]" placeholder="Enter image filename (optional)">//
+                    <div class="valid-feedback">Perfect.</div>
+                    <div class="invalid-feedback">Please Enter Image link or either Upload Image</div>
+                </div> 
+
+                //upload image -->
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload Listing Image</label>
+                    <input type="file" name="listing[image]" 
+                        class="form-control" >
+                    <!-- <input type="text" name="listing[image][filename]" placeholder="Enter image filename (optional)"> -->
+                    <div class="valid-feedback">Perfect.</div>
+                    <div class="invalid-feedback">Please Upload Image or either Enter Image link </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" name="listing[price]" placeholder="Enter Price" class="form-control"
+                            required />
+                        <div class="valid-feedback">Perfect price.</div>
+                        <div class="invalid-feedback">Enter a valid price.</div>
+                    </div>
+
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" name="listing[country]" placeholder="Enter Country" class="form-control"
+                            required />
+                        <div class="valid-feedback">Nicely Done.</div>
+                        <div class="invalid-feedback">Please enter valid country.</div>
+                    </div>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" name="listing[location]" placeholder="Enter Location (i.e. Pune, Jaipur)"
+                        class="form-control" required />
+                    <div class="valid-feedback">Nicely Done.</div>
+                    <div class="invalid-feedback">Please enter a valid location.</div>
+                </div>
+
+                <button class="btn add-btn btn-dark mt-3 mb-5">Add Listing</button>
+
+            </form>
+        </div>
+    </div>
+    <!-- </html> -->
