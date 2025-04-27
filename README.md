@@ -6,7 +6,7 @@ Live Demo 🚀
 
 Click here to view GlobalNest hosted!
 
-(Replace with your actual deployed link)
+https://globalnest.onrender.com
 
 
 ---
