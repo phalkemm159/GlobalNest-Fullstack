@@ -89,14 +89,23 @@ http://localhost:3000
 Folder Structure 🗂️
 
 GlobalNest-Fullstack/
+
 │
+
 ├── models/         # Mongoose models
+
 ├── public/         # Static files (CSS, JS, images)
+
 ├── routes/         # Express route files
+
 ├── seeds/          # Seed scripts for database
+
 ├── utils/          # Utility functions (middleware, cloudinary, etc.)
+
 ├── views/          # EJS templates
+
 ├── app.js          # Main Express app setup
+
 └── package.json    # Project metadata and dependencies
 
 
